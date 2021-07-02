@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Geolocation</title>
+		<style>
+			body {
+				text-align: center;
+			}
+			button {
+				padding: 10px 20px;
+				background-color: coral;
+				border: none;
+				outline: none;
+				font-size: large;
+				border-radius: 8px;
+				cursor: pointer;
+			}
+		</style>
+	</head>
+	<body>
+		<h1>My Current Location</h1>
+		<button id="btn">Get the location</button>
+		<div class="show">
+			<h1>Latitude: <span id="latitude"></span> </h1>
+			<h1>Longitude: <span id="longitude"></span></h1>
+		</div>
+		<script src="./geolocation.js"></script>
+	</body>
+</html>
