@@ -4,10 +4,59 @@
 		<meta charset="UTF-8" />
 		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<title>Client Side Storage</title>
+		<link rel="stylesheet" href="style2.css" />
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+		/>
+		<title>Local Storage with JS</title>
 	</head>
 	<body>
-		<h1>Client Side Storage</h1>
-		<script src="./ClientSideStorage/clientsidestorage.js"></script>
+		<div class="container">
+			<div class="book-form">
+				<div class="background"></div>
+				<div class="background"></div>
+				<div class="background"></div>
+				<div class="box">
+					<div class="square"></div>
+					<div class="square"></div>
+					<div class="square"></div>
+				</div>
+				<br />
+				<div class="form-container">
+					<div class="form">
+						<h2>Book List</h2>
+						<br />
+						<form>
+							<div class="inputBox">
+								<input type="text" id="title" placeholder="Title" />
+							</div>
+							<div class="inputBox">
+								<input type="text" id="author" placeholder="Author" />
+							</div>
+							<div class="inputBox">
+								<input type="text" id="isbn" placeholder="ISBN#" />
+							</div>
+							<br />
+							<button class="btn">Add Book</button>
+						</form>
+					</div>
+				</div>
+			</div>
+			<div class="table-container">
+				<table>
+					<thead>
+						<tr>
+							<th>Title</th>
+							<th>Author</th>
+							<th>ISBN#</th>
+							<th></th>
+						</tr>
+					</thead>
+					<tbody id="book-list"></tbody>
+				</table>
+			</div>
+		</div>
+		<script src="./ClientSideStorage/booklist.js"></script>
 	</body>
 </html>
